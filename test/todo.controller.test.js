@@ -5,6 +5,15 @@ const newTodo = require("../test/mock-data/new-todo");
 
 TodoModel.create = jest.fn();
 
+// Global scope (used in all test case)
+let req, res, next;
+
+beforeEach( () => {
+  req = httpMocks.createRequest();
+  res = httpMocks.createResponse();
+  next = null;
+})
+
 describe("TodoController.createTodo", () => {
   
   it("Should have a createTodoFunction", () => {
