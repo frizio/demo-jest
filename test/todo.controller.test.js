@@ -11,7 +11,7 @@ describe("TodoController.createTodo", () => {
 
   it("Should call TodoModel.create", () => {
     TodoController.createTodo();
-    expect(typeof TodoModel.create).toBeCalled();
+    expect(TodoModel.create).toBeCalled();
   });
 
 });
