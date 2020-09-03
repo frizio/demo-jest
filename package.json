@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest"
+    "test": "jest --watch all"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.13",
     "jest": "^26.4.2"
   }
 }
